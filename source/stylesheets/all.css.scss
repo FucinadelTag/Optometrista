@@ -345,6 +345,20 @@ footer {
 
 .form {
     margin: 10px;
+    p {
+      padding-top: rem-calc(10, null);
+      font-size: rem-calc(13, null);
+    }
+
+    label {
+      font-size: rem-calc(12, null);
+      font-style: italic;
+    }
+
+    hr {
+      margin-top: rem-calc(1, null);
+      margin-bottom: rem-calc(1.1, null);
+    }
 }
 
 

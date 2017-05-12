@@ -41,11 +41,11 @@ conversionCode: >
 
         </div>
         <div class="medium-6 large-5 columns center">
-            <h4 class="subheader">Possiamo risolvere i tuoi problemi:</h4>
+            <h4 class="subheader">Migliora la qualità della tua vita:</h4>
             <hr>
             <%= partial "partials/rowCallToAction" %>
             <p>
-                Migliora la qualità della tua vita lavorativa!
+                Scopri se richi<br> <i>problemi visivi seri e permantenti</i>
             </p>
         </div>
 </div>
@@ -170,4 +170,451 @@ conversionCode: >
         </div>
 
 </div>
+
+<div class="row">
+    <div class="columns">
+        <img src="https://prismic-io.s3.amazonaws.com/optometrista/0ce36eb96b17795330f8eea85e5c62bd7d2aac3c_lavoro-al-pc.jpg">
+    </div>
+</div>
+
+<div class="row banner show-for-medium">
+        <div class="small-12 columns">
+            <a href="#form">
+                <span class="sconto">Scopri se rischi<br><i>problemi visivi seri e permantenti</i></span>
+            </a>
+        </div>
+</div>
+
+<%= partial "partials/rowCallToAction" %>
+
+<div class="spazio_bianco"></div>
+
+<div class="row">
+    <div class="small-12 columns">
+        <h2>La soluzione</h2>
+    </div>
+</div>
+<div class="row">
+        <div class="small-12 medium-5 columns">
+            <img src="https://placehold.it/500x600">
+        </div>
+        <div class="small-12 medium-7 columns">
+            <h3 class="subheader">Un approccio scientifico</h3>
+            <p>
+                Una analisi corretta dei sintomi porta a verificare, prevenire e curare possibili problemi visivi permanenti. Ci occupimao quindi di:
+                <ul>
+                    <li>
+                        Effettuare una serie completa di test da vicino
+                    </li>
+                    <li>
+                        Effettuare test di valutazione della percezione visiva collegata al lavoro
+                    </li>
+                    <li>
+                        Efferttuare esercizi di training visivo in studio
+                    </li>
+                    <li>
+                        Effettuare controlli periodici al fine di valutare i progressi
+                    </li>
+                </ul>
+            </p>
+            <h3 class="subheader">Lenti di Performance</h3>
+            <p>
+                Per molte persone lo stress visivo può essere <strong>eliminato</strong> o ridotto al minimo attraverso l'uso <i>lenti di performance</i>
+            </p>
+
+            <h3 class="subheader">Traininig Visivo</h3>
+            <p>
+                I problemi di alcune persone potranno essere risolti trasmite un programma di training visivo atto a migliorare:
+                <ul>
+                    <li>
+                        La coordinazione e la scansione oculare per permettere agli occhi di lavorare correttamente insieme
+                    </li>
+                    <li>
+                        La capacità di mettere a fuoco il monitor senza affaticamento
+                    </li>
+                </ul>
+            </p>
+
+        </div>
+
+</div>
+
+<div class="row banner show-for-medium">
+        <div class="small-12 columns">
+            <a href="#form">
+                <span class="sconto">Scopri se rischi<br><i>problemi visivi seri e permantenti</i></span>
+            </a>
+        </div>
+</div>
+
+<section class="form">
+    <div id="form" class="row evidenza clearfix">
+        <div class="float-center">
+            <span><i class="fa fa-info" aria-hidden="true"></i> Effettua il test!</span><br>
+            Scopri se sei a rischio di problemi visivi permanenti!
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="small-12 medium-12 columns">
+            <form data-abide novalidate accept-charset="UTF-8" action="https://formkeep.com/f/5fb420fec4c8" method="POST">
+                <!-- <div data-abide-error class="alert callout" style="display: none;">
+                    <p><i class="fi-alert"></i> Si sono verificati alcuni errori evidenziati in rosso.</p>
+                </div> -->
+                <input type="hidden" id="deviceForm" name="device" value="large">
+                <input type="hidden" id="campagnaForm" name="campagna" value="direct">
+
+                <fieldset class="large-12 columns fieldset">
+                    <legend><h5 class="subheader">Impegno visivo</h5></legend>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    La lettura non è piacevole e rilassante, lenta, faticosa con sforzo
+                                    di concentrazione, attenzione e comprensione.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "v_1"} %>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Perdo il segno, inverto, salto, confondo lettere o parole.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "v_2"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Apprendo meglio se ascolto la lettura da parte di altri.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "v_3"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    La qualità visiva è scarsa e peggiora a fine giornata con annebbiamento, fatica nei passaggi di messa a fuoco da vicino (scrivania) / intermedio (monitor) a lontano e viceversa.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "v_4"} %>
+                            </div>
+                        </div>
+
+
+                </fieldset>
+
+                <fieldset class="large-12 columns fieldset">
+                    <legend><h5 class="subheader">Coordinare i due occhi</h5></legend>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Fatica nel gestire contemporaneamente i due occhi e mantenere una visione singola.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "c_1"} %>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Inclino il capo o chiudo un occhio durante la lettura e il lavoro.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "c_2"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Fatico a mantenere l’interesse nella stessa area (pagina, lavagna, monitor, spazio). Necessito di distogliere lo sguardo dall’area di attenzione e poi mi distraggo
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "c_3"} %>
+                            </div>
+                        </div>
+
+                </fieldset>
+
+                <fieldset class="large-12 columns fieldset">
+                    <legend><h5 class="subheader">Relazione con lo spazio</h5></legend>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Incoerente interpretazione dello spazio e delle distanze: sono instabile, insicuro, prudente, pondero prima di muovermi; inciampo, urto gli oggetti. Esito nell’afferrare, lanciare o ribattere la palla.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "r_1"} %>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Ho difficoltà a copiare dalla lavagna, scrivere nelle righe, incolonnare numeri, colorare entro gli spazi del disegno, scrivo con foglio ruotato.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "r_2"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Carente coordinazione motoria generale: goffo e impacciato nei movimenti con prestazioni sportive condizionate dal movimento ritmico, armonico, acrobatico e nelle dinamiche in cui si deve cambiare repentinamente direzione (step, sci, pattinaggio, ballo).
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "r_3"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Problemi di orientamento, instabilità ed insicurezza nella deambulazione (presenti anche negli anziani e nei post trauma da colpi di frusta, tamponamenti, cadute, scivolate importanti).
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "r_4"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Difficoltà nel gestire i compiti/impegni ed il tempo in maniera proficua.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "r_5"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Camminata poco fluida, insicura, sbilanciata sulle punte, non lineare che tende da un lato e devo compensare la traiettoria per andare diritto. Appoggio podalico non uniforme con pressione sui calcagni.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "r_6"} %>
+                            </div>
+                        </div>
+
+                </fieldset>
+
+                <fieldset class="large-12 columns fieldset">
+                    <legend><h5 class="subheader">Autocoscienza esterna</h5></legend>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Ridotta consapevolezza delle informazioni visive periferiche/ambientali. Visione con “paraocchi e difficoltà a fare caso alle cose a fianco”: non esploro lo spazio, cammino con sguardo in basso, fatico a trovare oggetti circondati da altri elementi (parti di puzzle, prodotti sugli scaffali, segnaletica stradale).
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "a_1"} %>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Disagio, insofferenza, instabilità, insicurezza, tensioni associati a: lettura, studio, lavoro, PC, videogiochi; ed in presenza di stimoli visivi dinamici (TV, cinema, guardare fuori dal finestrino, nel traffico, supermercati, centri commerciali, parco giochi, scale mobili, sport, ballo, in mezzo alla gente).
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "a_2"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Evito gli spostamenti rapidi degli occhi. Leggo con movimento della testa e perdo il segno.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "a_3"} %>
+                            </div>
+                        </div>
+
+                </fieldset>
+
+                <fieldset class="large-12 columns fieldset">
+                    <legend><h5 class="subheader">Risposta tensiva</h5></legend>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Cefalea invalidante, disagio e stanchezza generale durante o dopo impegni visivo-attentivi.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "t_1"} %>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Spalle infossate e rigide con alterata libertà dei movimenti del capo; postura in chiusura, incurvata, asimmetrica, ravvicinata alla scrivania.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "t_2"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Riposo non rilassato, contratto con risvegli notturni.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "t_3"} %>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <p>
+                                    Articolazione mandibolare contratta. Serro i denti durante gli impegni di studio o lavoro. Digrigno.
+                                </p>
+
+                            </div>
+                            <div class="columns">
+                                <%= partial "partials/radio_form", :locals => { :name => "t_4"} %>
+                            </div>
+                        </div>
+
+                </fieldset>
+
+                <div class="row">
+                    <div class="small-6 columns">
+                        <label>Nome e Cognome*
+                            <input type="text" name="nome_cognome" required>
+                            <span class="form-error">
+                                Il campo Nome è obbligatorio
+                            </span>
+                        </label>
+                    </div>
+                    <div class="small-6 columns">
+                        <label>E-Mail*
+                            <input type="email" name="email" required>
+                            <span class="form-error">
+                                Il campo E-Mail è obbligatorio
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-12 columns">
+                        <label>
+                            Richieste o Domande?
+                            <textarea rows="3" cols="50" name="messaggio"></textarea>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <input type="checkbox" name="privacy" id="privacy" required checked>
+                            <label for="privacy">
+                                Ho letto e accetto l'informativa sulla <a href="/privacy" target="_blank">Privacy</a>
+                                <span class="form-error">
+                                    <p>Accetta l'informativa sulla privacy!</p>
+                                </span>
+                            </label>
+                    </div>
+                </div>
+
+
+
+                <div class="row align-center">
+                    <fieldset class="small-12 columns">
+                        <button class="ctaButton button" type="submit" value="Submit">Invia la tua richiesta</button>
+                    </fieldset>
+                </div>
+          </form>
+        </div>
+        <!-- <div class="small-12 medium-6 columns clearfix">
+                <div class="row">
+                    <div class="columns vantaggiForm">
+                        <p>
+                            <div class="box_nverde">
+                                <span>Se preferisci usa il Numero Verde gratuito!</span><br />
+                                <span class="numero-verde"> 800-035-126 </span><br />
+                                <span>da Lunedì a Venerdì 9.00 - 13.00 e 14.00 - 17.00</span>
+                            </div>
+                        </p>
+                        <p>
+                            <i class="fa fa-thumbs-o-up"></i> Possibilità di <strong>Mutuo a tasso vantaggioso</strong>
+                        </p>
+                        <p>
+                            <i class="fa fa-thumbs-o-up"></i> Classe energetica A e B
+                        </p>
+                        <p>
+                            <i class="fa fa-thumbs-o-up"></i> Zona ricca di servizi
+                        </p>
+                        <p>
+                            <i class="fa fa-thumbs-o-up"></i> Spese condominiali bassissime
+                        </p>
+                    </div>
+                </div>
+        </div> -->
+    </div>
+</section>
+<hr>
 
