@@ -101,13 +101,13 @@ conversionCode: >
 
 <div class="row">
     <div class="small-12 columns">
-        <h2>Problemi</h2>
-        <p>Il logorante utilizzo del computer può essere la causa di diverse difficoltà:</p>
+        <h2>I segnali che indicano un problema</h2>
+        <p>Il logorante utilizzo del computer può essere la causa di diverse difficoltà visive e correlate:</p>
     </div>
 </div>
 
 
-<div class="row small-up-1 medium-up-2 sintomi">
+<!-- <div class="row small-up-1 medium-up-2 sintomi">
     <div class="column"><p><i class="fa fa-frown-o" aria-hidden="true"></i> Vista Annebbiata</p></div>
     <div class="column"><p><i class="fa fa-frown-o" aria-hidden="true"></i> Bruciore agli occhi</p></div>
     <div class="column"><p><i class="fa fa-frown-o" aria-hidden="true"></i> Secchezza oculare</p></div>
@@ -131,71 +131,79 @@ conversionCode: >
 
 
 
-</div>
+</div> -->
 
-        <!-- <div class="small-12 medium-6 columns">
-            <h3 class="subheader">Sintomi visivi</h3>
+<div class="row small-up-1 medium-up-2">
+
+        <div class="column">
+            <h3 class="subheader">Segnali visivi</h3>
             <p>
                 <ul>
-                    <li>
-                        Bruciore agli occhi
-                    </li>
-                    <li>
-                        Vista annebbiata
-                    </li>
-                    <li>
-                        Secchezza oculare
-                    </li>
-                    <li>
-                        Occhi arrossati
-                    </li>
                     <li>
                         Occhi stanchi
                     </li>
                     <li>
-                        Visione doppia
+                       Vista affaticata
                     </li>
                     <li>
-                        Dolore agli occhi
+                        Bruciore agli occhi
                     </li>
                     <li>
-                        Vista affaticata
+                        Visione annebbiata
+                    </li>
+                    <li>
+                        Confondere parole nella lettura
+                    </li>
+                    <li>
+                        Lettura lenta
+                    </li>
+                    <li>
+                        Visone doppia
+                    </li>
+                    <li>
+                        Perdere il segno leggendo
+                    </li>
+                    <li>
+                        La qualità visiva peggiora a fine giornata
                     </li>
                 </ul>
             </p>
 
         </div>
-        <div class="small-12 medium-6 columns">
-            <h3 class="subheader">Sintomi indiretti</h3>
+        <div class="column">
+            <h3 class="subheader">Segnali correlati</h3>
             <p>
                 <ul>
                     <li>
                         Mal di testa
                     </li>
                     <li>
-                        Mal di schiena
+                        Disagio e stanchezza fisica
                     </li>
                     <li>
-                        Stanchezza fisica
+                        Difficoltà di attenzione e concentrazione
                     </li>
                     <li>
-                        Nervosismo
+                        Visione con “paraocchi”
                     </li>
                     <li>
-                        Tensione muscolare
+                        Errata interpretazione delle distanze o spazio
                     </li>
                     <li>
-                        Cervicale
+                        Instabilità ed insicurezza nel movimento
                     </li>
                     <li>
-                        Dolori a spalle e braccia
+                        Tensione muscolare collo-spalle
                     </li>
                     <li>
-                        Dolori articolari
+                        Postura in chiusura
+                    </li>
+                    <li>
+                        Serraggio denti
                     </li>
                 </ul>
             </p>
-        </div> -->
+        </div>
 
 </div>
 
@@ -292,7 +300,7 @@ conversionCode: >
     </div>
     <div class="row">
         <div class="small-12 medium-12 columns">
-            <form data-abide novalidate accept-charset="UTF-8" action="#" method="POST">
+            <form accept-charset="UTF-8" action="https://formkeep.com/f/507c9044be16" method="POST">
                 <!-- <div data-abide-error class="alert callout" style="display: none;">
                     <p><i class="fi-alert"></i> Si sono verificati alcuni errori evidenziati in rosso.</p>
                 </div> -->
@@ -311,7 +319,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "v_1"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "a_1"} %>
                             </div>
                             <hr>
                         </div>
@@ -323,7 +331,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "v_4"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "a_2"} %>
                             </div>
                         </div>
 
@@ -341,7 +349,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "c_1"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "b_1"} %>
                             </div>
                             <hr>
                         </div>
@@ -353,7 +361,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "c_2"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "b_2"} %>
                             </div>
                             <hr>
                         </div>
@@ -371,7 +379,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "r_1"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "c_1"} %>
                             </div>
                             <hr>
                         </div>
@@ -384,7 +392,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "r_3"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "c_2"} %>
                             </div>
                             <hr>
                         </div>
@@ -402,7 +410,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "a_1"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "d_1"} %>
                             </div>
                             <hr>
                         </div>
@@ -415,7 +423,7 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "a_3"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "d_2"} %>
                             </div>
                         </div>
 
@@ -432,32 +440,19 @@ conversionCode: >
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "t_1"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "e_1"} %>
                             </div>
                             <hr>
                         </div>
                         <div class="row">
                             <div class="columns small-12 medium-6">
                                 <p>
-                                    Spalle infossate con rigidità dei movimenti del capo e degli occhi; postura in chiusura e ravvicinata alla scrivania.
+                                    Spalle infossate, rigidi movimenti del capo, postura in chiusura e ravvicinata, serraggio denti.
                                 </p>
 
                             </div>
                             <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "t_2"} %>
-                            </div>
-                            <hr>
-                        </div>
-
-                        <div class="row">
-                            <div class="columns small-12 medium-6">
-                                <p>
-                                    Serro i denti durante gli impegni attentivi.
-                                </p>
-
-                            </div>
-                            <div class="columns">
-                                <%= partial "partials/radio_form", :locals => { :name => "t_3"} %>
+                                <%= partial "partials/radio_form", :locals => { :name => "e_2"} %>
                             </div>
                             <hr>
                         </div>
@@ -541,16 +536,16 @@ conversionCode: >
 </section>
 <hr>
 
-<!-- <div class="row">
-    <div class="small-12 columns">
+<div class="row align-center">
+    <div class="small-7 columns">
         <h2>Chi siamo</h2>
     </div>
-</div> -->
-<div class="row">
+</div>
+<div class="row align-center">
         <!-- <div class="small-12 medium-6 columns">
             <img src="https://prismic-io.s3.amazonaws.com/optometrista/080dffa73cb4cb9b2d363863b427da51b0502cb8_logo_family_vision.jpg">
         </div> -->
-        <div class="small-12 medium-12 columns">
+        <div class="small-12 medium-7 columns">
             <img src="https://prismic-io.s3.amazonaws.com/optometrista/080dffa73cb4cb9b2d363863b427da51b0502cb8_logo_family_vision.jpg">
             <p>
                 Uno staff altamente qualificato con una selezionata collaborazione multidisciplinare che condivide un’approfondita conoscenza professionale per garantire un’efficace ed immediata risoluzione ad ogni specifica esigenza.
