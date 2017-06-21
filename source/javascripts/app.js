@@ -88,7 +88,7 @@ var showResponse = function (){
 
     let responseCode = userData.response.code;
 
-    let templateUrl = 'templates/' + responseCode
+    let templateUrl = '/templates/' + responseCode
 
     console.log (userData);
 
