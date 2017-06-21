@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "foundation-sites": "~6.3",
-    "modernizr": "~3.3.1"
+    "modernizr": "~3.3.1",
+    "mustache.js": "mustache#^2.3.0",
+    "jquery-serialize-object": "^2.5.0"
   }
 }

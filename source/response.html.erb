@@ -1,0 +1,46 @@
+---
+title: >
+        Disturbi Visivi
+
+description: >
+        Da inserire
+
+testata:
+    prima_riga: <span id="primaRiga" class="message upper"></span>
+    hasButton: 0
+    seconda_riga: >
+            di problemi legati all'equilibrio visivo!
+
+immagineTestata: https://prismic-io.s3.amazonaws.com/optometrista/f01e43ac7c0f8fc09077165bbd696d3c6e8891c4_occhi-stanchi-pc-6.jpg
+
+headCode: >
+
+conversionCode: >
+
+        <script type="text/javascript">
+            showResponse ();
+        </script>
+
+---
+
+<%= partial "partials/response_test"%>
+
+
+<div id='risultato'></div>
+
+<div class="spazio_bianco"></div>
+
+<%= partial "partials/form", :locals => { :form_class_large => "large-7", :phone_class_large => "large-5"} %>
+
+<div class="spazio_bianco"></div>
+
+<div class="row">
+    <div class="small-12 columns">
+        <h2>Il nostro metodo!</h2>
+    </div>
+</div>
+<%= partial "partials/soluzione" %>
+
+<div class="spazio_bianco"></div>
+
+<%= partial "partials/chi_siamo" %>
