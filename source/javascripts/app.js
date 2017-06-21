@@ -1,9 +1,11 @@
-var sendEmail = function (formData, total){
+var sendEmail = function (formData){
 
-    formData.risultatoTest = total;
+    let userData = getUserData ();
 
-    $.post( "https://hooks.zapier.com/hooks/catch/178342/9pofo2/", formData, function( data ) {
-        console.log (data);
+    userData.formData = formData;
+
+    $.post( "https://hooks.zapier.com/hooks/catch/178342/9pofo2/", userData, function( data ) {
+        window.location.replace("/response");
     });
 
 }
@@ -45,7 +47,7 @@ var getResponse = function (total){
     }
 
     if (total >= 8 && total<= 15 ){
-        response.message = 'Qualche segnale di rischio';
+        response.message = 'Ci sono dei segnali';
         response.code = 'moderato';
     }
 
@@ -69,9 +71,7 @@ $( "#formTestJquery" ).submit(function( event ) {
     let datiUtente = saveUserData (formData, total);
 
 
-    sendEmail (formData, total);
-
-    window.location.replace("/response");
+    sendEmail (formData);
 
 });
 
@@ -94,6 +94,10 @@ var showResponse = function (){
 
     $('.message').html(userData.response.message);
     $('.nome_cognome').html(userData.nome_cognome);
+
+    $( "input[name=nome_cognome]" ).val(userData.nome_cognome);
+    $( "input[name=email]" ).val(userData.email);
+    $( "input[name=risultatoTest]" ).val(userData.risultatoTest);
 
     $.get(templateUrl, function(template) {
         var rendered = Mustache.render(template, userData);

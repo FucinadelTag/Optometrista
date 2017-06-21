@@ -227,6 +227,15 @@ footer {
     }
 }
 
+.evidenzaLow {
+  @extend .evidenza;
+  background-color: scale-color(#1779ba, $lightness: 35%);
+  color: #ffffff;
+
+  span {
+    color: #ffffff;
+  }
+}
 .small {
   font-size: rem-calc(13, null);
 }
@@ -266,6 +275,35 @@ footer {
     }
 }
 
+.form {
+    margin: 10px;
+    p {
+      padding-top: rem-calc(10, null);
+      font-size: rem-calc(13, null);
+    }
+
+    label {
+      font-size: rem-calc(12, null);
+      font-style: italic;
+    }
+
+    hr {
+      margin-top: rem-calc(1, null);
+      margin-bottom: rem-calc(1.1, null);
+    }
+}
+
+.sintomi {
+  padding-bottom: 10px;
+  p {
+    font-size: rem-calc(19, null);
+    color: $dark-gray;
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
 
 /* cookie banner related styles below */
 
@@ -341,36 +379,6 @@ footer {
     color: #fff;
     font-size: 12px;
     font-weight: 900;
-}
-
-.form {
-    margin: 10px;
-    p {
-      padding-top: rem-calc(10, null);
-      font-size: rem-calc(13, null);
-    }
-
-    label {
-      font-size: rem-calc(12, null);
-      font-style: italic;
-    }
-
-    hr {
-      margin-top: rem-calc(1, null);
-      margin-bottom: rem-calc(1.1, null);
-    }
-}
-
-.sintomi {
-  padding-bottom: 10px;
-  p {
-    font-size: rem-calc(19, null);
-    color: $dark-gray;
-  }
-}
-
-.upper {
-  text-transform: uppercase;
 }
 
 

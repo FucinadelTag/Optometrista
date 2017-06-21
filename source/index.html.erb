@@ -427,14 +427,14 @@ conversionCode: >
                         </label>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="small-12 medium-12 columns">
                         <label>
                             Richieste o Domande?
                             <textarea rows="3" cols="50" name="messaggio"></textarea>
                         </label>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row">
                     <div class="small-12 columns">
@@ -487,4 +487,6 @@ conversionCode: >
 <hr>
 
 <%= partial "partials/chi_siamo" %>
+<hr>
+<%= partial "partials/form", :locals => { :form_class_large => "large-7", :phone_class_large => "large-5"} %>
 
